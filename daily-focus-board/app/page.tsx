@@ -5,6 +5,7 @@ import { BigRockForm } from "@/components/big-rock-form"
 import { BigRockList } from "@/components/big-rock-list"
 import { Card } from "@/components/ui/card"
 import { CheckCircle2, Sparkles } from "lucide-react"
+import { FlowerWatermark } from "@/components/flower-watermark"
 
 export interface BigRock {
   title: string
@@ -77,6 +78,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen relative overflow-hidden">
+      <FlowerWatermark />
       <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-rose-50 to-red-100 animate-gradient" />
 
       <div className="absolute top-0 left-0 right-0 h-80 overflow-hidden opacity-30">
@@ -92,7 +94,7 @@ export default function HomePage() {
               <Sparkles className="h-4 w-4" />
               <span className="text-sm font-medium">Make Today Count</span>
             </div>
-            <h1 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-pink-600 via-rose-600 to-red-600 bg-clip-text text-transparent text-balance leading-tight">
+            <h1 className="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-pink-600 via-rose-600 to-red-600 bg-clip-text text-transparent text-balance leading-tight tracking-tight">
               Today&apos;s 3 Big Rocks
             </h1>
             <p className="text-xl text-gray-700 font-medium text-pretty">Choose what really matters today.</p>
@@ -108,7 +110,7 @@ export default function HomePage() {
           {rocks.some((r) => r.title.trim()) && (
             <Card className="p-6 space-y-6 bg-white/90 backdrop-blur-sm shadow-xl border-2 border-pink-200">
               <div className="space-y-2">
-                <h2 className="text-2xl font-semibold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
+                <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent tracking-tight">
                   Your Focus Today
                 </h2>
                 <div className="flex items-center justify-between">
@@ -140,7 +142,7 @@ export default function HomePage() {
             <Card className="p-8 bg-gradient-to-br from-pink-500 via-rose-500 to-red-500 text-white shadow-2xl border-0">
               <div className="space-y-4 text-center">
                 <Sparkles className="h-12 w-12 mx-auto" />
-                <blockquote className="text-2xl font-bold text-balance">
+                <blockquote className="text-2xl font-bold text-balance tracking-tight">
                   &quot;The key is not to prioritize what&apos;s on your schedule, but to schedule your
                   priorities.&quot;
                 </blockquote>
