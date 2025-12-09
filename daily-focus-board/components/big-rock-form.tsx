@@ -48,8 +48,8 @@ export function BigRockForm({ rocks, onSave }: BigRockFormProps) {
         <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
           Choose Your Big Rocks
         </h2>
-        <p className="text-sm text-gray-600 font-medium text-pretty">
-          Focus on three important tasks that will make today meaningful.
+        <p className="text-base text-gray-700 font-semibold italic bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 bg-clip-text text-transparent">
+          ✨ Focus on three important tasks that will make today meaningful. ✨
         </p>
       </div>
 
